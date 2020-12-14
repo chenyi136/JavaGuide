@@ -35,6 +35,7 @@ public class CallableDemo {
             //将返回值 future 添加到 list，我们可以通过 future 获得 执行 Callable 得到的返回值
             futureList.add(future);
         }
+        // 打印
         for (Future<String> fut : futureList) {
             try {
                 System.out.println(new Date() + "::" + fut.get());
